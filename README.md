@@ -3,7 +3,7 @@ Raspberry Pi Pico weather station
 
 ## Hardware
 ### Microcontroller
-This project is primarily developed for the **Raspberry Pi Pico W**, though I might switch to the *Pico 2W*. I currently do not plan on adding support for other MCUs.
+This project is primarily developed for the RP2350-based **Raspberry Pi Pico 2W**!
 
 ### Sensors
 | Name   | Bus | Address/CS | Data Type                                                           |
@@ -13,6 +13,7 @@ This project is primarily developed for the **Raspberry Pi Pico W**, though I mi
 | SHT31  | I2C | `0x44`     | Air Temperature, Humidity                                           |
 | SEN55  | I2C | `0x69`     | Particulate Matter, VOC, NOx, Humidity (AUX), Air Temperature (AUX) |
 | SCD41  | I2C | `0x62`     | CO2                                                                 |
+| RP2350 | ADC | ADC4       | Temperature (CPU)                                                   |
 
 AUX: Sensor can also read this data, but there is already a sensor that does it better.
 
